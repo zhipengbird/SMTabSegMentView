@@ -13,6 +13,11 @@
 		0A0B5A5B22AE604F00DF2BD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A0B5A5A22AE604F00DF2BD3 /* Assets.xcassets */; };
 		0A0B5A5E22AE604F00DF2BD3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A0B5A5C22AE604F00DF2BD3 /* LaunchScreen.storyboard */; };
 		0A0B5A6122AE604F00DF2BD3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A0B5A6022AE604F00DF2BD3 /* main.m */; };
+		0A0B5A6922AE88EE00DF2BD3 /* LoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A0B5A6822AE88EE00DF2BD3 /* LoadingView.m */; };
+		0A0B5A6F22B0EFD000DF2BD3 /* CircleAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A0B5A6E22B0EFD000DF2BD3 /* CircleAnimationView.m */; };
+		0A0B5A7222B2360F00DF2BD3 /* SMTabSegmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A0B5A7122B2360F00DF2BD3 /* SMTabSegmentView.m */; };
+		0A0B5A7522B2363100DF2BD3 /* SMTabSegItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A0B5A7422B2363100DF2BD3 /* SMTabSegItemView.m */; };
+		3535A1D3656934B5D9E259FF /* libPods-AnimationTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CF7426408B4FAF52D6DDE4CD /* libPods-AnimationTest.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,17 @@
 		0A0B5A5D22AE604F00DF2BD3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0A0B5A5F22AE604F00DF2BD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A0B5A6022AE604F00DF2BD3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0A0B5A6722AE88EE00DF2BD3 /* LoadingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoadingView.h; sourceTree = "<group>"; };
+		0A0B5A6822AE88EE00DF2BD3 /* LoadingView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoadingView.m; sourceTree = "<group>"; };
+		0A0B5A6D22B0EFD000DF2BD3 /* CircleAnimationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CircleAnimationView.h; sourceTree = "<group>"; };
+		0A0B5A6E22B0EFD000DF2BD3 /* CircleAnimationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CircleAnimationView.m; sourceTree = "<group>"; };
+		0A0B5A7022B2360F00DF2BD3 /* SMTabSegmentView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMTabSegmentView.h; sourceTree = "<group>"; };
+		0A0B5A7122B2360F00DF2BD3 /* SMTabSegmentView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMTabSegmentView.m; sourceTree = "<group>"; };
+		0A0B5A7322B2363100DF2BD3 /* SMTabSegItemView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMTabSegItemView.h; sourceTree = "<group>"; };
+		0A0B5A7422B2363100DF2BD3 /* SMTabSegItemView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMTabSegItemView.m; sourceTree = "<group>"; };
+		4E520F5DA9A58422BC44B606 /* Pods-AnimationTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimationTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AnimationTest/Pods-AnimationTest.debug.xcconfig"; sourceTree = "<group>"; };
+		B21B3950B8EB00751AA24BB8 /* Pods-AnimationTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimationTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-AnimationTest/Pods-AnimationTest.release.xcconfig"; sourceTree = "<group>"; };
+		CF7426408B4FAF52D6DDE4CD /* libPods-AnimationTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AnimationTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3535A1D3656934B5D9E259FF /* libPods-AnimationTest.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +61,8 @@
 			children = (
 				0A0B5A5022AE604D00DF2BD3 /* AnimationTest */,
 				0A0B5A4F22AE604D00DF2BD3 /* Products */,
+				24812A00A5400279FB8B8F09 /* Pods */,
+				860179ABDB23AC9AB9D03A63 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,8 +86,41 @@
 				0A0B5A5C22AE604F00DF2BD3 /* LaunchScreen.storyboard */,
 				0A0B5A5F22AE604F00DF2BD3 /* Info.plist */,
 				0A0B5A6022AE604F00DF2BD3 /* main.m */,
+				0A0B5A6722AE88EE00DF2BD3 /* LoadingView.h */,
+				0A0B5A6822AE88EE00DF2BD3 /* LoadingView.m */,
+				0A0B5A6D22B0EFD000DF2BD3 /* CircleAnimationView.h */,
+				0A0B5A6E22B0EFD000DF2BD3 /* CircleAnimationView.m */,
+				0A82ADE722B504A10041AE3B /* SMTabSegmentView */,
 			);
 			path = AnimationTest;
+			sourceTree = "<group>";
+		};
+		0A82ADE722B504A10041AE3B /* SMTabSegmentView */ = {
+			isa = PBXGroup;
+			children = (
+				0A0B5A7022B2360F00DF2BD3 /* SMTabSegmentView.h */,
+				0A0B5A7122B2360F00DF2BD3 /* SMTabSegmentView.m */,
+				0A0B5A7322B2363100DF2BD3 /* SMTabSegItemView.h */,
+				0A0B5A7422B2363100DF2BD3 /* SMTabSegItemView.m */,
+			);
+			path = SMTabSegmentView;
+			sourceTree = "<group>";
+		};
+		24812A00A5400279FB8B8F09 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4E520F5DA9A58422BC44B606 /* Pods-AnimationTest.debug.xcconfig */,
+				B21B3950B8EB00751AA24BB8 /* Pods-AnimationTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		860179ABDB23AC9AB9D03A63 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CF7426408B4FAF52D6DDE4CD /* libPods-AnimationTest.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -78,6 +130,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0A0B5A6422AE604F00DF2BD3 /* Build configuration list for PBXNativeTarget "AnimationTest" */;
 			buildPhases = (
+				CD61D658F77C33A5D4EC4F13 /* [CP] Check Pods Manifest.lock */,
 				0A0B5A4A22AE604D00DF2BD3 /* Sources */,
 				0A0B5A4B22AE604D00DF2BD3 /* Frameworks */,
 				0A0B5A4C22AE604D00DF2BD3 /* Resources */,
@@ -97,7 +150,7 @@
 		0A0B5A4622AE604D00DF2BD3 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1020;
+				LastUpgradeCheck = 1100;
 				ORGANIZATIONNAME = yuanpinghua;
 				TargetAttributes = {
 					0A0B5A4D22AE604D00DF2BD3 = {
@@ -136,13 +189,38 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		CD61D658F77C33A5D4EC4F13 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AnimationTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0A0B5A4A22AE604D00DF2BD3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				0A0B5A5622AE604D00DF2BD3 /* ViewController.m in Sources */,
+				0A0B5A6922AE88EE00DF2BD3 /* LoadingView.m in Sources */,
+				0A0B5A6F22B0EFD000DF2BD3 /* CircleAnimationView.m in Sources */,
 				0A0B5A6122AE604F00DF2BD3 /* main.m in Sources */,
+				0A0B5A7222B2360F00DF2BD3 /* SMTabSegmentView.m in Sources */,
+				0A0B5A7522B2363100DF2BD3 /* SMTabSegItemView.m in Sources */,
 				0A0B5A5322AE604D00DF2BD3 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -220,7 +298,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -273,7 +351,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -283,11 +361,13 @@
 		};
 		0A0B5A6522AE604F00DF2BD3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E520F5DA9A58422BC44B606 /* Pods-AnimationTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = KFSKA2NQKM;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = AnimationTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,11 +380,13 @@
 		};
 		0A0B5A6622AE604F00DF2BD3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B21B3950B8EB00751AA24BB8 /* Pods-AnimationTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = KFSKA2NQKM;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = AnimationTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
