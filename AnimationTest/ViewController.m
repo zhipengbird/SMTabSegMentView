@@ -28,33 +28,36 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    /*
-    UIView *animationView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
-    animationView.backgroundColor = UIColor.clearColor;
-    animationView.center = self.view.center;
-    [self.view addSubview:animationView];
-    UILabel  *label = [[UILabel alloc] initWithFrame:CGRectMake(100, 100, 100, 50)];
-    label.text = @"7 days try";
-    [self.view addSubview:label];
     
-    CAGradientLayer *gradientLayer = [CAGradientLayer layer];
-    gradientLayer.frame = label.frame;
-    [self.view.layer addSublayer:gradientLayer];
-    gradientLayer.colors = @[(id)UIColor.redColor.CGColor,(id)UIColor.yellowColor.CGColor];
-  
-    gradientLayer.mask = label.layer;
-    label.frame = gradientLayer.bounds;
-    
-    
-    LoadingView *loadingView = [[LoadingView alloc] initWithFrame:CGRectMake(20, 100, 300, 100)];
-    loadingView.backgroundColor = UIColor.lightGrayColor;
-    [loadingView startAnimation];
-    [self.view addSubview:loadingView];
+//    UIView *animationView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
+//    animationView.backgroundColor = UIColor.clearColor;
+//    animationView.center = self.view.center;
+//    [self.view addSubview:animationView];
+//    UILabel  *label = [[UILabel alloc] initWithFrame:CGRectMake(100, 100, 100, 50)];
+//    label.text = @"7 days try";
+//    [self.view addSubview:label];
+//
+//    CAGradientLayer *gradientLayer = [CAGradientLayer layer];
+//    gradientLayer.frame = label.frame;
+//    [self.view.layer addSublayer:gradientLayer];
+//    gradientLayer.colors = @[(id)UIColor.redColor.CGColor,(id)UIColor.yellowColor.CGColor];
+//
+//    gradientLayer.mask = label.layer;
+//    label.frame = gradientLayer.bounds;
     
     
+//    LoadingView *loadingView = [[LoadingView alloc] initWithFrame:CGRectMake(20, 100, 300, 100)];
+//    loadingView.backgroundColor = UIColor.lightGrayColor;
+//    [loadingView startAnimation];
+//    [self.view addSubview:loadingView];
+    
+    
+    ///头像加载视图
     CircleAnimationView *circleAnimationView = [[CircleAnimationView alloc] initWithFrame:CGRectMake(20, 200, 100, 100)];
     [self.view addSubview:circleAnimationView];
-    */
+
+    
+   ///<分段视图示例
     self.dataSourceList = [NSMutableArray array];
     [ self.dataSourceList addObjectsFromArray:@[@"苹果",@"香蕉",@"鸭梨",@"苹果",@"香蕉",@"鸭梨",
                                             @"苹果",@"香蕉",@"鸭梨",@"苹果",@"香蕉",@"鸭梨",
