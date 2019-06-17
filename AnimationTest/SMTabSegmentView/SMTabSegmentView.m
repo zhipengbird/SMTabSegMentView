@@ -133,7 +133,7 @@
         make.width.mas_equalTo(currentsize.width);
     }];
     
-    currentsize = [itemView.title boundingRectWithSize:CGSizeZero options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:[UIFont boldSystemFontOfSize:self.normalFontSize]} context:nil].size;
+    currentsize = [lastItemView.title boundingRectWithSize:CGSizeZero options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:[UIFont boldSystemFontOfSize:self.normalFontSize]} context:nil].size;
     [lastItemView mas_updateConstraints:^(MASConstraintMaker *make) {
         make.width.mas_equalTo(currentsize.width);
     }];
@@ -251,7 +251,7 @@
         make.width.mas_equalTo(currentsize.width);
     }];
     
-    currentsize = [itemView.title boundingRectWithSize:CGSizeZero options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:[UIFont boldSystemFontOfSize:previousFontSize]} context:nil].size;
+    currentsize = [lastItemView.title boundingRectWithSize:CGSizeZero options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:[UIFont boldSystemFontOfSize:previousFontSize]} context:nil].size;
     
     [lastItemView mas_updateConstraints:^(MASConstraintMaker *make) {
         make.width.mas_equalTo(currentsize.width);
@@ -267,6 +267,9 @@
     [self layoutIfNeeded];
 }
 -(void)defaultIndex:(NSInteger)defaultIndex{
+    if (defaultIndex > self.titleArray.count) {
+        defaultIndex = 0;
+    }
     _currentIndex = defaultIndex;
     [self setNeedsLayout];
     if([self.delegate respondsToSelector:@selector(segmentView:didSelectItemAtIndex:)]){

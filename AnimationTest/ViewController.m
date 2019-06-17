@@ -59,17 +59,14 @@
     
    ///<分段视图示例
     self.dataSourceList = [NSMutableArray array];
-    [ self.dataSourceList addObjectsFromArray:@[@"苹果",@"香蕉",@"鸭梨",@"苹果",@"香蕉",@"鸭梨",
-                                            @"苹果",@"香蕉",@"鸭梨",@"苹果",@"香蕉",@"鸭梨",
-                                            @"苹果",@"香蕉",@"鸭梨",@"苹果",@"香蕉",@"鸭梨",
-                                            @"苹果",@"香蕉",@"鸭梨",@"苹果",@"香蕉",@"鸭梨"]];
+    [ self.dataSourceList addObjectsFromArray:@[@"榜单",@"热门",@"我的歌曲",@"最新推荐",@"小语种"]];
     [self createsubView];
 
     SMTabSegmentView *view = [[SMTabSegmentView alloc] initWithFrame:CGRectMake(0, 400, CGRectGetWidth(self.view.bounds ), 50)];
     view.delegate = self;
     self.segmentView = view;
     [self.segmentView reloadDataList:self.dataSourceList];
-    [self.segmentView defaultIndex:5];
+    [self.segmentView defaultIndex:1];
     [self.view addSubview:view];
 
 }
